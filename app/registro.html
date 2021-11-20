@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Acuasoft System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="/vendor/waves/waves.min.css" />
+	<link rel="stylesheet" href="/vendor/wow/animate.css" />
+	<link rel="stylesheet" href="/css/nativedroid2.css" />
+	<link rel="stylesheet" href="/styles/alertify/alertify.min.css" />
+
+	<script src="/js/alertify/alertify.min.js"></script>
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	|
+</head>
+
+<body>
+	<div data-role="page">
+
+		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Acuasoft System</h1>
+		</div>
+
+		<div role="main" class="ui-content" data-inset="false">
+			<div class="contenedor-logo">
+				<img src="images/logo.png" alt="Logo" class="logo-main" width="192px">
+			</div>
+			<h5 class="nd2-headline headline-login">Registro de usuario</h5>
+			<form id="registro" method="POST">
+				<div class="row">
+					<table>
+						<tr>
+						<td>Cédula</td>
+						<td>
+						<input required type="text" pattern="[0-9]+" id="cedula" name="cedula" size="10" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>Primer nombre: </td>
+						<td>
+						<input required type="text" pattern="^[A-Za-z]+$" id="nombre1" name="nombre1" value="" size="30"/>
+						</td>
+						</tr>
+						<tr>
+						<td>Segundo nombre: </td>
+						<td>
+						<input required type="text" id="nombre2" name="nombre2" value="" size="30"/>
+						</td>
+						</tr>
+						<tr>
+						<td>Primer apellido: </td>
+						<td>
+						<input required type="text" pattern="^[A-Za-z]+$" id="apellido1" name="apellido1" value="" size="30"/>
+						</td>
+						</tr>
+						<tr>
+						<td>Segundo apellido: </td>
+						<td>
+						<input required type="text" id="apellido2" name="apellido2" value="" size="30"/>
+						</td>
+						</tr>
+						<tr>
+						<td>Telefono: </td>
+						<td>
+						<input required type="text" pattern="[0-9]+" id="telefono" name="telefono" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>Direccion: </td>
+						<td>
+						<input required type="text" id="direccion" name="direccion" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>Correo: </td>
+						<td>
+						<input required type="email" id="correo" name="correo" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>password: </td>
+						<td>
+						<input required type="password" id="password" name="password" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>Estado: </td>
+						<td>							
+						<input type="checkbox" id="estado" name="estado" value=""/>
+						</td>
+						</tr>
+						<tr>
+						<td>&nbsp;</td>
+						<td>
+						<button type="submit" value="Guardar" onclick="validar2()">Guardar</button>
+						</td>
+						</tr>
+						</table>
+				</div>
+			</form>
+			<br>
+			<br>
+			<br>
+			<a href="index.html"
+				class="ui-btn ui-btn-block clr-btn-accent-teal waves-effect waves-button waves-effect waves-button">Iniciar
+				sesión</a>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<script src="/vendor/waves/waves.min.js"></script>
+	<script src="/vendor/wow/wow.min.js"></script>
+	<script src="/js/nativedroid2.js"></script>
+	<script src="/nd2settings.js"></script>
+
+	<script src="js/registro.js"></script>
+
+</body>
+
+</html>
