@@ -6,6 +6,7 @@ $(() => {
 
 function iniciarSesion() {
 
+    
     $.ajax({
         url: URL_BASE + '/usuario/iniciarSesion',
         type: 'POST',
